@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hello7"
+    tools:context=".MainScreen">
+
+
+S
+
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/appbar"></include>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/createGroup"
+        android:elevation="10dp"
+        android:background="@drawable/searchmuseebat"
+        app:queryHint="Search Contact" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar2"/>
+
+    <ImageButton
+        android:id="@+id/logoutB"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/ic_baseline_logout_24"
+        android:elevation="4dp"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/createGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/logoutB"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/ic_baseline_group_add_24"
+        android:elevation="4dp"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

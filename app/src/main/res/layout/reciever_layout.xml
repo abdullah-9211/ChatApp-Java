@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="7dp"
+    android:layout_marginRight="9dp"
+    android:background="@drawable/chat_reciever_side"
+    android:maxWidth="350dp"
+    android:maxHeight="400dp"
+    android:minHeight="35dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reciever_message_text"
+        android:maxWidth="250dp"
+        android:minWidth="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="2dp"
+        android:inputType="textLongMessage|textMultiLine"
+        android:text="HAHAHHAHAHAHA"
+        android:fontFamily="@font/ubuntu"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/reciever_message_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintVertical_bias="1.0"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ubuntu"
+        android:text="12:56 PM"
+        android:id="@+id/reciever_message_time"
+        android:layout_marginBottom="5dp"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="15dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
